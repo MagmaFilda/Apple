@@ -1,0 +1,19 @@
+:root{
+    --text-pink: #ff7188;
+    --text-purple: #8f3a8f;
+}
+
+.welcome-info {
+    background: url("../images/background.jpg");
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 5vh;
+}
+
+.text-pink{
+    color: var(--text-pink);
+}
+.text-purple{
+    color: var(--text-purple);
+}
