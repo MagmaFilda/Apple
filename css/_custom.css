@@ -1,6 +1,11 @@
 :root{
     --text-pink: #ff7188;
     --text-purple: #8f3a8f;
+    --bg-gray: #5a5555;
+    --bg-light-gray: #c3bcbc;
+}
+body{
+    background: linear-gradient(to bottom, #e2e2ed, #5f5f67);
 }
 
 .welcome-info {
@@ -16,4 +21,59 @@
 }
 .text-purple{
     color: var(--text-purple);
+}
+.bg-light-gray{
+    background-color: var(--bg-light-gray);
+}
+.dropdown-item:hover {
+    background-color: var(--bg-light-gray);
+}
+.card{
+    height: 100%;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.modal-body img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+}.modal-content {
+     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+ }
+.btn-primary {
+    border-color: #000000;
+    background-color: var(--bg-gray);
+    color: white;
+}
+.btn-primary:hover {
+    background-color: #212529;
+    border-color: #000000;
+    color: teal;
+}
+.btn-close:focus {
+    border-color: var(--bg-gray);
+    box-shadow: 0 0 0 0.2rem rgba(19, 19, 19, 0.36);
+}
+.form-control:focus {
+    border-color: var(--bg-gray);
+    box-shadow: 0 0 0 0.2rem rgba(19, 19, 19, 0.36);
+}
+.form-check-input:checked {
+    background-color: var(--bg-gray);
+    border-color: #000000;
+}
+.form-check-input:focus {
+    border-color: var(--bg-gray);
+    box-shadow: 0 0 0 0.2rem rgba(19, 19, 19, 0.36);
+}
+.img-fluid {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+footer p:hover {
+    color: teal;
 }

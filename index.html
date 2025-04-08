@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/_custom.css">
 </head>
 <body>
-<header>
+<header id="home">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <img src="images/logo.png">
@@ -20,23 +20,20 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                            aria-expanded="false">
-                            Dropdown
+                            Categories
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#products">Products</a></li>
+                            <li><a class="dropdown-item" href="#comparison">Comparison</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#contact">Contact Us</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -73,81 +70,114 @@
                         <label class="form-check-label" for="exampleCheck1">Check me out</label>
                     </div>
                     <button type="submit" class="btn btn-primary">
-                        <a href="admin.html" class="nav-link text-white">Login</a>
+                        <a href="admin.html" class="nav-link">Login</a>
                     </button>
                 </form>
             </div>
         </div>
     </div>
 </div>
-<div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
+<div class="modal fade" id="modalIphone" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="productModalLabel">iPhone 15 Pro - Details</h5>
+                <h5 class="modal-title">iPhone 15 Pro</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <img src="https://via.placeholder.com/300x200" class="img-fluid mb-3" alt="iPhone 15 Pro">
+                <img src="images/iPhone.jpg" class="img-fluid mb-3 text-center" alt="iPhone">
                 <p><strong>Chip:</strong> A17 Pro</p>
-                <p><strong>Camera:</strong> 48MP Main, Ultra Wide, Telephoto</p>
-                <p><strong>Material:</strong> Titanium</p>
-                <p><strong>Display:</strong> 6.1" Super Retina XDR, ProMotion</p>
-                <p>The iPhone 15 Pro delivers exceptional performance, stunning photos, and a premium build, making it one of the best smartphones on the market.</p>
+                <p><strong>Camera:</strong> 48MP Triple Camera</p>
+                <p><strong>Display:</strong> 6.1" Super Retina XDR</p>
+                <p>Premium build, pro-level performance, and next-gen features.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modalMacbook" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">MacBook Air M3</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="images/macbook.jpg" class="img-fluid mb-3" alt="MacBook">
+                <p><strong>Chip:</strong> Apple M3</p>
+                <p><strong>Camera:</strong> 1080p FaceTime HD</p>
+                <p><strong>Display:</strong> 13.6" Liquid Retina</p>
+                <p>Ultra-thin and lightweight, yet powerful enough for everything you do.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modalWatch" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Apple Watch Series 9</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="images/applewatch.jpg" class="img-fluid mb-3" alt="Watch">
+                <p><strong>Chip:</strong> S9 SiP</p>
+                <p><strong>Camera:</strong> —</p>
+                <p><strong>Display:</strong> Always-On Retina</p>
+                <p>Track your health, stay connected, and control with simple gestures.</p>
             </div>
         </div>
     </div>
 </div>
 
 <main>
-    <section class="welcome-info d-flex align-items-center text-purple">
+    <section class="welcome-info d-flex align-items-center text-white">
         <div class="container text-center py-5">
             <h1 class="p-5">Discover the future. Today.</h1>
             <p>Explore the latest generation of Apple products.<br> Where performance, design, and innovation come together in perfect harmony.</p>
         </div>
     </section>
 
-    <section>
+    <section id="products">
         <div class="container px-4 text-center">
             <h2 class="text-center m-5">Rent Our Products</h2>
             <div class="row gx-5 gy-5">
                 <div class="col-lg-4">
                     <div class="card">
-                        <img src="images/grizi.jpg">
+                        <img src="images/iPhone.jpg">
                         <div class="card-body">
                             <h5 class="card-title">iPhone 15 Pro</h5>
                             <h6>Forged in titanium.</h6>
                             <p class="card-text">Our lightest Pro model ever, powered by the A17 Pro chip and featuring the all-new Action button for ultimate control. </p>
-                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#productModal">More details</a>
+                            <a href="#" class="card-link text-black" data-bs-toggle="modal" data-bs-target="#modalIphone">More details</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="card">
-                        <img src="images/grizi.jpg">
+                        <img src="images/macbook.jpg">
                         <div class="card-body">
                             <h5 class="card-title">MacBook Air M3</h5>
                             <h6>Light. Fast. Iconic.</h6>
                             <p class="card-text">A super-thin notebook with the incredible power of the M3 chip and all-day battery life.</p>
-                            <a href="#" class="nav-link">More details</a>
+                            <a href="#" class="card-link text-black" data-bs-toggle="modal" data-bs-target="#modalMacbook">More details</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="card">
-                        <img src="images/grizi.jpg">
+                        <img src="images/applewatch.jpg">
                         <div class="card-body">
                             <h5 class="card-title">Apple Watch Series 9</h5>
                             <h6>Smarter. Sharper. More you.</h6>
                             <p class="card-text">With intuitive gesture control, enhanced health tracking, and seamless integration — it’s your ultimate companion, right on your wrist.</p>
-                            <a href="#" class="nav-link">More details</a>
+                            <a href="#" class="card-link text-black" data-bs-toggle="modal" data-bs-target="#modalWatch">More details</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="container my-5">
+    <section class="container my-5" id="comparison">
         <h2 class="text-center mb-4">Product Comparison</h2>
         <div class="table-responsive">
             <table class="table table-bordered text-center align-middle">
@@ -229,9 +259,9 @@
             </div>
         </div>
     </section>
-    <section class="container my-5">
+    <section class="container my-5" id="contact">
         <h2 class="text-center mb-4">Contact Us</h2>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center text-white">
             <div class="col-md-6 col-lg-5">
                 <form>
                     <div class="mb-3">
@@ -254,6 +284,9 @@
         </div>
     </section>
 </main>
+<footer class="bg-dark text-white text-center py-3 mt-5">
+    <p>&copy; 2025 Apple Products - All rights reserved</p>
+</footer>
 <script src="js/bootstrap.bundle.js"></script>
 </body>
 </html>
