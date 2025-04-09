@@ -1,7 +1,8 @@
 :root{
     --text-yellow: #f4c500;
-    --text-purple: #8f3a8f;
+    --text-purple: #bc20bc;
     --text-teal: rgb(0, 128, 128);
+    --text-blue: rgb(0, 0, 255);
     --bg-gray: #5a5555;
     --bg-light-gray: #c3bcbc;
 }
@@ -25,6 +26,9 @@ body{
 }
 .text-teal{
     color: var(--text-teal);
+}
+.text-blue{
+    color: var(--text-blue);
 }
 .bg-light-gray{
     background-color: var(--bg-light-gray);
@@ -89,6 +93,10 @@ body{
 .img-fluid {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.contact-form {
+    max-width: 450px;
+    width: 100%;
 }
 footer p:hover {
     color: var(--text-teal);
