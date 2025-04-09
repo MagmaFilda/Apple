@@ -1,6 +1,7 @@
 :root{
-    --text-pink: #ff7188;
+    --text-yellow: #f4c500;
     --text-purple: #8f3a8f;
+    --text-teal: rgb(0, 128, 128);
     --bg-gray: #5a5555;
     --bg-light-gray: #c3bcbc;
 }
@@ -16,11 +17,14 @@ body{
     margin-bottom: 5vh;
 }
 
-.text-pink{
-    color: var(--text-pink);
+.text-yellow{
+    color: var(--text-yellow);
 }
 .text-purple{
     color: var(--text-purple);
+}
+.text-teal{
+    color: var(--text-teal);
 }
 .bg-light-gray{
     background-color: var(--bg-light-gray);
@@ -30,6 +34,9 @@ body{
 }
 .card{
     height: 100%;
+}
+.table{
+    border-radius: 100%;
 }
 .card:hover {
     transform: scale(1.05);
@@ -52,11 +59,20 @@ body{
 .btn-primary:hover {
     background-color: #212529;
     border-color: #000000;
-    color: teal;
+    color: var(--text-teal);
 }
 .btn-close:focus {
     border-color: var(--bg-gray);
     box-shadow: 0 0 0 0.2rem rgba(19, 19, 19, 0.36);
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.icons i{
+    cursor: pointer;
+    font-size: 24px;
 }
 .form-control:focus {
     border-color: var(--bg-gray);
@@ -75,5 +91,5 @@ body{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 footer p:hover {
-    color: teal;
+    color: var(--text-teal);
 }
