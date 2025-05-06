@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin Panel - Products</title>
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/_custom.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4 col-md-3 col-lg-2 d-flex flex-column bg-dark p-4 vh-100">
+      <h1 class="text-white">Admin Panel</h1>
+      <hr class="text-white">
+      <nav class="nav d-flex flex-column">
+        <a class="nav-link py-2 px-0 text-white" href="dashboard.html">
+          <i class="fa fa-dashboard"></i> Dashboard
+        </a>
+        <a class="nav-link py-2 px-0 text-white" href="products.html">
+          <i class="fa fa-list"></i> Products
+        </a>
+        <a class="nav-link py-2 px-0 text-white" href="orders.html">
+          <i class="fa fa-credit-card"></i> Order
+        </a>
+        <a class="nav-link py-2 px-0 text-white" href="users.html">
+          <i class="fa fa-user"></i> Users
+        </a>
+      </nav>
+      <div class="mt-auto text-white">
+        <hr>
+        <a class="nav-link" href="user-profile.html">
+          <h5 class="text-center">Filip Kamenčák</h5>
+        </a>
+      </div>
+    </div>
+
+    <div class="col-sm-8 col-md-9 col-lg-10 bg-light vh-100 p-4 overflow-auto">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2>Product Management</h2>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addProductModal">Add Product</button>
+      </div>
+
+      <div class="table-responsive">
+        <table class="table table-hover">
+          <thead class="table-light">
+          <tr>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Stock</th>
+            <th>Actions</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>iPhone 15 Pro</td>
+            <td>Smartphones</td>
+            <td>$999</td>
+            <td>25</td>
+            <td>
+              <div class="dropdown">
+                <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                  Actions
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Edit</a></li>
+                  <li><a class="dropdown-item" href="#">Detail</a></li>
+                  <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>MacBook Air M3</td>
+            <td>Laptops</td>
+            <td>$1299</td>
+            <td>12</td>
+            <td>
+              <div class="dropdown">
+                <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                  Actions
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Edit</a></li>
+                  <li><a class="dropdown-item" href="#">Detail</a></li>
+                  <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Apple Watch Series 9</td>
+            <td>Wearables</td>
+            <td>$399</td>
+            <td>40</td>
+            <td>
+              <div class="dropdown">
+                <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                  Actions
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Edit</a></li>
+                  <li><a class="dropdown-item" href="#">Detail</a></li>
+                  <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>iPad Pro M4</td>
+            <td>Tablets</td>
+            <td>$1099</td>
+            <td>8</td>
+            <td>
+              <div class="dropdown">
+                <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                  Actions
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Edit</a></li>
+                  <li><a class="dropdown-item" href="#">Detail</a></li>
+                  <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>AirPods Pro</td>
+            <td>Accessories</td>
+            <td>$249</td>
+            <td>60</td>
+            <td>
+              <div class="dropdown">
+                <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                  Actions
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Edit</a></li>
+                  <li><a class="dropdown-item" href="#">Detail</a></li>
+                  <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
+                </ul>
+              </div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="addProductModal" tabindex="-1" aria-labelledby="addProductModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <form>
+        <div class="modal-header">
+          <h5 class="modal-title" id="addProductModalLabel">Add New Product</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="productName" class="form-label">Product Name</label>
+            <input type="text" class="form-control" id="productName" required>
+          </div>
+          <div class="mb-3">
+            <label for="productCategory" class="form-label">Category</label>
+            <input type="text" class="form-control" id="productCategory" required>
+          </div>
+          <div class="mb-3">
+            <label for="productPrice" class="form-label">Price</label>
+            <input type="number" class="form-control" id="productPrice" required>
+          </div>
+          <div class="mb-3">
+            <label for="productStock" class="form-label">Stock</label>
+            <input type="number" class="form-control" id="productStock" required>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-success">Save</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="../js/bootstrap.bundle.js"></script>
+</body>
+</html>
