@@ -43,13 +43,13 @@
                 <div class="row">
                     <div class="col-md-6 mb-4">
                         <div class="card p-3">
-                            <h5 class="card-title text-center">Objednávky za poslední měsíce</h5>
+                            <h5 class="card-title text-center">Deliveries last month</h5>
                             <canvas id="ordersChart"></canvas>
                         </div>
                     </div>
                     <div class="col-md-6 mb-4">
                         <div class="card p-3">
-                            <h5 class="card-title text-center">Kategorie produktů</h5>
+                            <h5 class="card-title text-center">Category of products</h5>
                             <canvas id="categoriesChart"></canvas>
                         </div>
                     </div>
@@ -62,9 +62,9 @@
         const ordersChart = new Chart(document.getElementById("ordersChart"), {
             type: 'bar',
             data: {
-                labels: ["Leden", "Únor", "Březen", "Duben", "Květen"],
+                labels: ["January", "February", "March", "April", "May"],
                 datasets: [{
-                    label: 'Počet objednávek',
+                    label: 'Count of orders',
                     data: [12, 19, 14, 22, 18],
                     backgroundColor: 'rgba(54, 162, 235, 0.7)',
                     borderColor: 'rgba(54, 162, 235, 1)',
@@ -86,7 +86,7 @@
             data: {
                 labels: ["iPhone", "MacBook", "iPad", "Watch"],
                 datasets: [{
-                    label: 'Kategorie',
+                    label: 'Category',
                     data: [35, 25, 20, 20],
                     backgroundColor: [
                         'rgba(255, 99, 132, 0.7)',
